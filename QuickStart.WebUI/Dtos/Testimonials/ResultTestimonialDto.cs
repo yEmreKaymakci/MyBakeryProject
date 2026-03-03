@@ -2,11 +2,11 @@
 {
     public class ResultTestimonialDto
     {
-        public int testimonialId { get; set; }
-        public string fullName { get; set; }
-        public string title { get; set; }
-        public string description { get; set; }
-        public int rate { get; set; }
-        public string imageUrl { get; set; }
+        public int Id { get; set; }
+        public string FullName { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Rate { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

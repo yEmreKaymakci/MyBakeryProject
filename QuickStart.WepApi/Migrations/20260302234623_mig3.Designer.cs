@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuickStart.WepApi.Context;
 
@@ -10,9 +11,10 @@ using QuickStart.WepApi.Context;
 namespace QuickStart.WepApi.Migrations
 {
     [DbContext(typeof(QuickStartContext))]
-    partial class QuickStartContextModelSnapshot : ModelSnapshot
+    [Migration("20260302234623_mig3")]
+    partial class mig3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,11 +71,11 @@ namespace QuickStart.WepApi.Migrations
 
             modelBuilder.Entity("QuickStart.WepApi.Entity.Service", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ServiceId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ServiceId"), 1L, 1);
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -87,7 +89,7 @@ namespace QuickStart.WepApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ServiceId");
 
                     b.ToTable("Services");
                 });
