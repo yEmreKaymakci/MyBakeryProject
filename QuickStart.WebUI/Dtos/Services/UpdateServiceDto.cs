@@ -2,9 +2,9 @@
 {
     public class UpdateServiceDto
     {
-            public int Id { get; set; }
-            public string title { get; set; }
-            public string description { get; set; }
-            public string iconUrl { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string IconUrl { get; set; }
     }
 }

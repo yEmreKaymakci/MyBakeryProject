@@ -2,10 +2,10 @@
 {
     public class UpdateNotificationWithNotificationTypeDto
     {
-        public int notificationId { get; set; }
-        public string title { get; set; }
-        public string content { get; set; }
-        public bool isRead { get; set; }
-        public string notificationTypeName { get; set; }
+        public int NotificationId { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public bool IsRead { get; set; }
+        public string NotificationTypeName { get; set; }
     }
 }
