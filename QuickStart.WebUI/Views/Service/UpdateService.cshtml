@@ -1,24 +1,24 @@
 ﻿@model QuickStart.WebUI.Dtos.Services.UpdateServiceDto
 @{
-    Layout = "~/Views/_AdminLayout/Index.cshtml";
+	Layout = "~/Views/_AdminLayout/Index.cshtml";
 }
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 <div class="container">
-    <br /> <br />
-    <form method="post">
-        <input type="hidden" asp-for="serviceId" />
-        <label> Hizmet ismi </label>
-        <input type="text" asp-for="title" class="form-control" />
-        <br>
-        <label> Hizmet Açıklaması</label>
-        <input type="text" asp-for="description" class="form-control" />
-        <br />
-        <label> İkon</label>
-        <input type="text" asp-for="iconUrl" class="form-control" />
-        <br />
-        <button class="btn btn-primary"> Hizmeti Güncelle</button>
+	<br /> <br />
+	<form method="post">
+		<input type="hidden" asp-for="Id" />
+		<label> Hizmet ismi </label>
+		<input type="text" asp-for="Title" class="form-control" />
+		<br>
+		<label> Hizmet Açıklaması</label>
+		<input type="text" asp-for="Description" class="form-control" />
+		<br />
+		<label> İkon</label>
+		<input type="text" asp-for="IconUrl" class="form-control" />
+		<br />
+		<button class="btn btn-primary"> Hizmeti Güncelle</button>
 
-    </form>
+	</form>
 </div>

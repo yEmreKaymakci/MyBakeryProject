@@ -16,16 +16,16 @@
 					<h6 class="p-3 mb-0">Bildirimler</h6>
 					@foreach (var item in Model)
 					{
-						<a class="dropdown-item preview-item" href="/Notification/MarkeAsRead/@item.notificationId">
+						<a class="dropdown-item preview-item" href="/Notification/MarkeAsRead/@item.NotificationId">
 							<div class="preview-thumbnail">
-								<div class="preview-icon @(item.isRead ? "bg-secondary" : "bg-warning")">
+								<div class="preview-icon @(item.IsRead ? "bg-secondary" : "bg-warning")">
 									<i class="mdi mdi-bell"> </i>
 								</div>
 							</div>
 							<div class="preview-item-content">
-								@item.title
+								@item.Title
 								<p class="mb-0">
-									<span class="text-small text-muted">@item.content</span>
+									<span class="text-small text-muted">@item.Content</span>
 								</p>
 							</div>
 						</a>

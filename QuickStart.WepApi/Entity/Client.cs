@@ -2,7 +2,7 @@
 
 namespace QuickStart.WepApi.Entity
 {
-    public class Clients : BaseEntity
+    public class Client : BaseEntity
     {
         public string ImageUrl { get; set; }
     }

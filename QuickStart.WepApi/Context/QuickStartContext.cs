@@ -18,5 +18,22 @@ namespace QuickStart.WepApi.Context
         public DbSet<Notification> Notifications { get; set; }
 
         public DbSet<NotificationType> NotificationTypes { get; set; }
+
+        public DbSet<About> Abouts { get; set; }
+
+        public DbSet<Client> Clients { get; set; }
+
+        public DbSet<Contact> Contacts { get; set; }
+
+        public DbSet<FAQ> FAQs { get; set; }
+
+        public DbSet<Feature> Features { get; set; }
+
+        public DbSet<Message> Messages { get; set; }
+
+        public DbSet<Slider> Sliders { get; set; }
+
+        public DbSet<Subscribe> Subscribes { get; set; }
+
     }
 }
