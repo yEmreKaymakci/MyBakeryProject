@@ -1,4 +1,5 @@
-﻿using QuickStart.WepApi.Entity.Common;
+﻿using System.Text.Json.Serialization;
+using QuickStart.WepApi.Entity.Common;
 
 namespace QuickStart.WepApi.Entity
 {
@@ -14,7 +15,8 @@ namespace QuickStart.WepApi.Entity
 
         public int NotificationTypeId { get; set; }
 
-        public NotificationType NotificationType { get; set; }
+        [JsonIgnore]
+        public NotificationType? NotificationType { get; set; }
     }
 }
 //1 Numaralı sipariş alındı. Bildirim Türü: sipariş 

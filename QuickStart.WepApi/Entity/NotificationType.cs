@@ -6,7 +6,7 @@
 
         public string Name { get; set; }
 
-        public List<Notification> Notifications { get; set; }
+        public List<Notification>? Notifications { get; set; }
     }
 }
 //Sipariş, Mesaj, Kampanya, Güncelleme

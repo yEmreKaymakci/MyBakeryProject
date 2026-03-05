@@ -19,7 +19,7 @@ namespace QuickStart.WepApi.Controllers
         [HttpGet]
         public IActionResult ServiceList()
         {
-            var value=_context.Services.ToList();
+            var value = _context.Services.ToList();
             return Ok(value);
         }
         [HttpGet("ServiceCount")]
