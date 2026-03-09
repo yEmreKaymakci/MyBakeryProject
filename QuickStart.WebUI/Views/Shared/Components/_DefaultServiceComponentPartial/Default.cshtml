@@ -1,82 +1,46 @@
-﻿<section id="services" class="services section light-background">
+﻿@using QuickStart.WebUI.Dtos.Services
+@model List<ResultServicesDto>
+<section id="services" class="services section light-background">
 
 	<!-- Section Title -->
 	<div class="container section-title" data-aos="fade-up">
 		<h2>Hizmetlerimiz</h2>
 	</div><!-- End Section Title -->
 
-	<div class="container">
+    <div class="container">
+        <div class="row gy-4">
 
-		<div class="row g-5">
+            @{
+                int index = 0;
+            } @foreach (var item in Model)
+            {
+                // 1. ADIM: Sağlı Sollu Dizilim Mantığı
+                // Eğer index çift sayıysa (0, 2, 4) farklı class, tek sayıysa farklı class ver.
+                // Not: Kendi HTML'indeki class isimlerini buraya yazmalısın.
+                string alignmentClass = (index % 2 == 0) ? "class-sol" : "class-sag";
 
-			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-				<div class="service-item item-cyan position-relative">
-					<i class="bi bi-activity icon"></i>
-					<div>
-						<h3>Nesciunt Mete</h3>
-						<p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-						<a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-					</div>
-				</div>
-			</div><!-- End Service Item -->
+                // 2. ADIM: İlk 6'dan Sonrasını Gizleme Mantığı
+                // Index 6 veya daha büyükse (yani 7. eleman ve sonrası), "d-none" ve bizim kontrol edeceğimiz "extra-service" class'ını ekle.
+                string displayClass = (index >= 6) ? "d-none extra-service" : "";
 
-			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-				<div class="service-item item-orange position-relative">
-					<i class="bi bi-broadcast icon"></i>
-					<div>
-						<h3>Eosle Commodi</h3>
-						<p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-						<a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-					</div>
-				</div>
-			</div><!-- End Service Item -->
+                <div class="col-lg-6 @alignmentClass @displayClass">
+                    <div class="service-item">
+                        <i class="@item.IconUrl"></i>
+                        <h3>@item.Title</h3>
+                        <p>@item.Description</p>
+                    </div>
+                </div>
+                index++;
+            }
+        </div>
 
-			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-				<div class="service-item item-teal position-relative">
-					<i class="bi bi-easel icon"></i>
-					<div>
-						<h3>Ledo Markt</h3>
-						<p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-						<a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-					</div>
-				</div>
-			</div><!-- End Service Item -->
-
-			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-				<div class="service-item item-red position-relative">
-					<i class="bi bi-bounding-box-circles icon"></i>
-					<div>
-						<h3>Asperiores Commodi</h3>
-						<p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-						<a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-					</div>
-				</div>
-			</div><!-- End Service Item -->
-
-			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-				<div class="service-item item-indigo position-relative">
-					<i class="bi bi-calendar4-week icon"></i>
-					<div>
-						<h3>Velit Doloremque.</h3>
-						<p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-						<a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-					</div>
-				</div>
-			</div><!-- End Service Item -->
-
-			<div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-				<div class="service-item item-pink position-relative">
-					<i class="bi bi-chat-square-text icon"></i>
-					<div>
-						<h3>Dolori Architecto</h3>
-						<p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-						<a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
-					</div>
-				</div>
-			</div><!-- End Service Item -->
-
-		</div>
-
-	</div>
+        @if (Model.Count > 6)
+        {
+            <div class="text-center mt-4 text-center">
+                <button id="toggleServicesBtn" class="btn btn-primary" onclick="toggleServices()">Daha Fazla Göster</button>
+            </div>
+        }
+    </div>
 
 </section>
+

@@ -29,6 +29,8 @@ namespace QuickStart.WepApi.Context
 
         public DbSet<Feature> Features { get; set; }
 
+        public DbSet<FeatureService> FeatureServices { get; set; }
+
         public DbSet<Message> Messages { get; set; }
 
         public DbSet<Slider> Sliders { get; set; }
