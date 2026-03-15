@@ -5,11 +5,11 @@ using QuickStart.WebUI.Dtos.Subscribes;
 
 namespace QuickStart.WebUI.Controllers
 {
-    public class SubscribeController : Controller
+    public class DefaultSubscribeController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        public SubscribeController(IHttpClientFactory httpClientFactory)
+        public DefaultSubscribeController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
