@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-  <a href="#proje-hakkında">Proje Hakkında</a> •
+  <a href="#proje-özellikleri">Proje Özellikleri</a> •
   <a href="#kullanılan-teknolojiler">Kullanılan Teknolojiler</a> •
   <a href="#kurulum">Kurulum</a> •
   <a href="#proje-görselleri">Proje Görselleri</a>
@@ -18,6 +18,19 @@
 **MyBakery**, bir fırın veya pastanenin ürünlerini, hizmetlerini ve iletişim bilgilerini şık bir şekilde müşterilerine sunmasını sağlayan web uygulamasıdır. İçerik yönetim özellikleriyle dinamik olarak menü, hakkımızda yazısı, çalışanlar ve slider gibi kısımlar güncellenebilir. Kullanıcı dostu arayüzü ve güçlü altyapısıyla işletmelerin dijital vitrini olmak için tasarlanmıştır.
 
 > **Not:** Bu proje, **AkademiQ AI Business School** eğitimi kapsamında geliştirilmiştir.
+
+---
+
+## ✨ Proje Özellikleri
+
+Proje sadece görsel olarak değil, aynı zamanda işlevsel olarak da zenginleştirilmiş yönetim araçlarına sahiptir:
+
+- **Dinamik İçerik Yönetimi:** Ana sayfada yer alan ürünler, hizmetler, çalışan bilgileri ve müşteri yorumları (Testimonials) tamamen admin panelden kontrol edilir.
+- **Gelişmiş Bildirim Yönetimi:** Gelen bildirimler ve iletişim mesajları; "Okundu/Okunmadı", "Tür" ve ad/içerik aramasına göre **anlık (AJAX) filtreleme** ile listelenebilir.
+- **Toplu İşlemler:** Admin paneldeki listelerde (ör. bildirimlerde) birden çok öğeyi seçerek tek tıkla toplu silme/işlem yapma imkanı.
+- **Admin Authentication:** Sisteme yalnızca yetkili (Admin) kullanıcılar, güvenli cookie ve giriş doğrulama (Authentication/Authorization) adımlarından geçerek erişebilir.
+- **Dinamik Slider Bağlantısı:** Ana sayfadaki görsel geçişleri (Slider), veritabanından dinamik olarak çekilerek güncellenebilir formattadır.
+- **Responsivite:** Tüm bileşenler, Bootstrap altyapısı sayesinde mobil ve tablet cihazlara %100 uyumludur.
 
 ---
 
@@ -102,11 +115,11 @@ Projeyi yerel ortamınızda (localhost) çalıştırmak için aşağıdaki adım
   <img src="images/placeholder-admin-1.jpg" alt="Admin Paneli 1" width="800">
   <br><br>
 
-  <p><strong>Ürün/Hizmet Ekleme Sayfası</strong></p>
+  <p><strong>Gelişmiş Bildirim/Mesaj Filtreleme</strong></p>
   <img src="images/placeholder-admin-2.jpg" alt="Admin Paneli 2" width="800">
   <br><br>
 
-  <p><strong>Gelen Mesajlar/İletişim Paneli</strong></p>
+  <p><strong>Ürün ve İçerik Ekleme Modülü</strong></p>
   <img src="images/placeholder-admin-3.jpg" alt="Admin Paneli 3" width="800">
 
 </div>
