@@ -93,15 +93,39 @@ Projeyi yerel ortamınızda (localhost) çalıştırmak için aşağıdaki adım
 <div align="center">
   
   <p><strong>Ana Sayfa Genel Bakış</strong></p>
-  <img src="images/placeholder-home-1.jpg" alt="Ana Sayfa 1" width="800">
+  
+  ![SliderUI](https://github.com/user-attachments/assets/00937435-72b6-40a2-a727-89634fb14c1b)
+  <br><br>
+  
+  <p><strong>Hakkımızda</strong></p>
+  
+  ![Hakkımızda](https://github.com/user-attachments/assets/a308a309-ebaf-4cfa-909c-74f2ed6ba320)
   <br><br>
 
-  <p><strong>Hizmetler ve Menü Kısmı</strong></p>
-  <img src="images/placeholder-home-2.jpg" alt="Ana Sayfa 2" width="800">
+  <p><strong>Özellikler</strong></p>
+
+  ![ÖzelliklerUI](https://github.com/user-attachments/assets/70268cec-bf8d-4e4d-ac2c-36bfd54d0fdb)
   <br><br>
 
-  <p><strong>Hakkımızda ve Ekip Kısmı</strong></p>
-  <img src="images/placeholder-home-3.jpg" alt="Ana Sayfa 3" width="800">
+  <p><strong>Hizmetler</strong></p>
+
+  ![HizmetlerUI](https://github.com/user-attachments/assets/fee97db6-7cb3-4af0-91ba-0881ca820b76)
+  <br><br>
+
+  <p><strong>SSS</strong></p>
+
+  ![SSSUI](https://github.com/user-attachments/assets/c4501bc6-5e77-4f1b-af4c-61cb6a20e3c8)
+  <br><br>
+
+  <p><strong>Referanslar</strong></p>
+
+  ![ReferanslarUI](https://github.com/user-attachments/assets/8fd5ac39-ef94-4214-9f47-003309fa2e4b)
+  <br><br>
+
+  <p><strong>İletişim</strong></p>
+
+  ![İletişimUI](https://github.com/user-attachments/assets/15737a40-15a3-492b-8bb0-ace09aac1488)
+  <br><br>
 
 </div>
 
@@ -111,15 +135,54 @@ Projeyi yerel ortamınızda (localhost) çalıştırmak için aşağıdaki adım
 
 <div align="center">
   
-  <p><strong>Admin Dashboard (Özet Ekranı)</strong></p>
-  <img src="images/placeholder-admin-1.jpg" alt="Admin Paneli 1" width="800">
+  <p><strong>Admin Dashboard (İstatistik Ekranı)</strong></p>
+
+  ![Dashboard](https://github.com/user-attachments/assets/23d654c4-49e8-48ae-b9b5-e599fe88a429)
   <br><br>
 
   <p><strong>Gelişmiş Bildirim/Mesaj Filtreleme</strong></p>
-  <img src="images/placeholder-admin-2.jpg" alt="Admin Paneli 2" width="800">
+
+  ![NoticaitonIndex](https://github.com/user-attachments/assets/0cdc1a85-6886-4214-9954-07eb8af0afe6)
   <br><br>
 
-  <p><strong>Ürün ve İçerik Ekleme Modülü</strong></p>
-  <img src="images/placeholder-admin-3.jpg" alt="Admin Paneli 3" width="800">
+  <p><strong>Navbar Bildirimleri</strong></p>
+  
+![NavbarNotification](https://github.com/user-attachments/assets/696998ea-adf9-4f1f-b9ed-b7b32a794866)
+  <br><br>
+
+  <p><strong>Arama Çubuğu</strong></p>
+
+![SubscribeSearch](https://github.com/user-attachments/assets/1bd6edcb-d43e-4982-a29b-0c5fa9452841)
+  <br><br>
+
+  <p><strong>Hakkımda</strong></p>
+
+![AboutIndex](https://github.com/user-attachments/assets/a4a0a098-1ff3-43a5-a761-6d5d6d1aca3a)
+  <br><br>
+
+  <p><strong>Hakkımda Oluşturma</strong></p>
+
+![AboutCreate](https://github.com/user-attachments/assets/f0f1abf9-bf80-4278-b97d-bbcea0dc4020)
+  <br><br>
+
+  <p><strong>Hakkımda Güncelleme</strong></p>
+
+![AboutUpdate](https://github.com/user-attachments/assets/0c3d84f1-6983-4c27-82b1-f11d3a59ce60)
+  <br><br>
+
+  <p><strong>İçerik İnceleme</strong></p>
+
+![AboutFullpage](https://github.com/user-attachments/assets/dda74d98-2be6-4a22-a4a7-dee158c883b7)
+  <br><br>
+
+  <p><strong>Kayıt Olma</strong></p>
+
+![Register](https://github.com/user-attachments/assets/4430a4b9-fe12-45f8-a1de-b9b6adaa80c3)
+  <br><br>
+
+  <p><strong>Giriş</strong></p>
+
+![Login](https://github.com/user-attachments/assets/452ff8a6-605f-465f-80b4-79c8456836bc)
+  <br><br>
 
 </div>
